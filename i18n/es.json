@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "getQuote": "Cotizacion"
+  },
+  "home": {
+    "hero": {
+      "title": "Excelencia en Construccion Corporativa de Inicio a Entrega",
+      "description": "Entregamos programas de construccion de alto rendimiento con precision industrial, liderazgo en seguridad y control disciplinado del proyecto."
+    },
+    "services": {
+      "title": "Servicios de Construccion Integrados",
+      "description": "Desde la planificacion inicial hasta la ejecucion en sitio, nuestros equipos brindan entrega estructurada para proyectos complejos."
+    },
+    "projects": {
+      "title": "Proyectos que Definen Confiabilidad",
+      "description": "Proyectos seleccionados que muestran calidad, control y ejecucion consistente en distintos sectores."
+    },
+    "why": {
+      "title": "Por Que los Clientes Eligen ZBN BRYS",
+      "description": "Desempeno medible, comunicacion transparente y enfoque de colaboracion a largo plazo."
+    }
+  }
+}

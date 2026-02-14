@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "getQuote": "Get Quote"
+  },
+  "home": {
+    "hero": {
+      "title": "Corporate Construction Excellence from Concept to Completion",
+      "description": "We deliver high-performance construction programs with industrial precision, safety leadership, and disciplined project control."
+    },
+    "services": {
+      "title": "Integrated Construction Services",
+      "description": "From early planning to site execution, our teams provide structured delivery for complex projects."
+    },
+    "projects": {
+      "title": "Projects That Define Reliability",
+      "description": "Selected projects showcasing quality, control, and consistent execution across sectors."
+    },
+    "why": {
+      "title": "Why Clients Choose ZBN BRYS",
+      "description": "Measured performance, transparent communication, and long-term partnership focus."
+    }
+  }
+}
