@@ -1,3 +1,8 @@
+<script setup lang="ts">
+const onSubmit = (_payload: Record<string, unknown>) => {
+  // UI-only placeholder: no backend submission in this implementation.
+};
+</script>
 <template>
   <section class="section-wrap">
     <UContainer class="max-w-7xl mx-auto space-y-12">
@@ -10,11 +15,7 @@
 
       <div class="grid gap-8 lg:grid-cols-[1.2fr_1fr]">
         <UCard class="rounded-xl border border-zinc-200 shadow-xl">
-          <FormKit
-            type="form"
-            :actions="false"
-            @submit="onSubmit"
-          >
+          <FormKit type="form" :actions="false" @submit="onSubmit">
             <div class="grid gap-4 md:grid-cols-2">
               <FormKit
                 type="text"
@@ -82,7 +83,10 @@
             </h3>
             <ul class="mt-4 space-y-3 text-sm text-zinc-600">
               <li class="flex items-center gap-3">
-                <UIcon name="i-lucide-phone-call" class="h-5 w-5 text-amber-500" />
+                <UIcon
+                  name="i-lucide-phone-call"
+                  class="h-5 w-5 text-amber-500"
+                />
                 +1 (555) 489-1200
               </li>
               <li class="flex items-center gap-3">
@@ -113,7 +117,9 @@
             <h3 class="font-heading text-xl font-bold text-zinc-950">
               Location
             </h3>
-            <div class="mt-4 grid h-56 place-items-center rounded-xl border border-dashed border-zinc-300 bg-zinc-100 text-sm text-zinc-500">
+            <div
+              class="mt-4 grid h-56 place-items-center rounded-xl border border-dashed border-zinc-300 bg-zinc-100 text-sm text-zinc-500"
+            >
               Map Placeholder
             </div>
           </UCard>
@@ -122,10 +128,3 @@
     </UContainer>
   </section>
 </template>
-
-<script setup lang="ts">
-const onSubmit = (_payload: Record<string, unknown>) => {
-  // UI-only placeholder: no backend submission in this implementation.
-}
-</script>
-

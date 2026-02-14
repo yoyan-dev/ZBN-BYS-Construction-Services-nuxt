@@ -1,3 +1,11 @@
+<script setup lang="ts">
+defineProps<{
+  icon: string;
+  title: string;
+  description: string;
+  badge?: string;
+}>();
+</script>
 <template>
   <article class="grid-card-hover h-full">
     <UCard class="h-full rounded-xl border border-zinc-200 shadow-xl">
@@ -12,21 +20,11 @@
         </UBadge>
       </div>
       <h3 class="font-heading text-xl font-bold text-zinc-950">
-        Integrated Construction Services
+        {{ title }}
       </h3>
       <p class="mt-3 text-sm leading-relaxed text-zinc-600">
-        From early planning to site execution, our teams provide structured
-        delivery for complex projects.
+        {{ description }}
       </p>
     </UCard>
   </article>
 </template>
-
-<script setup lang="ts">
-defineProps<{
-  icon: string;
-  title: string;
-  description: string;
-  badge?: string;
-}>();
-</script>

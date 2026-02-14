@@ -118,8 +118,8 @@ const reasons: ReasonItem[] = [
       <UContainer class="max-w-7xl mx-auto space-y-12">
         <SectionTitle
           eyebrow="Core Services"
-          :title="t('home.services.title')"
-          :description="t('home.services.description')"
+          title="Integrated Construction Services"
+          description="From early planning to site execution, our teams provide structured delivery for complex projects."
           align="center"
         />
 
@@ -140,8 +140,8 @@ const reasons: ReasonItem[] = [
       <UContainer class="max-w-7xl mx-auto space-y-12">
         <SectionTitle
           eyebrow="Featured Work"
-          :title="t('home.projects.title')"
-          :description="t('home.projects.description')"
+          title="Projects That Define Reliability"
+          description="Selected projects showcasing quality, control, and consistent execution across sectors."
           align="center"
         />
 
@@ -162,8 +162,8 @@ const reasons: ReasonItem[] = [
       <UContainer class="max-w-7xl mx-auto space-y-10">
         <SectionTitle
           eyebrow="Why ZBN BRYS"
-          :title="t('home.why.title')"
-          :description="t('home.why.description')"
+          title="Why Clients Choose ZBN BRYS"
+          description="Measured performance, transparent communication, and long-term partnership focus."
           align="center"
         />
 

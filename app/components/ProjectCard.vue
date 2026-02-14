@@ -1,3 +1,11 @@
+<script setup lang="ts">
+defineProps<{
+  title: string;
+  category: string;
+  description: string;
+  image: string;
+}>();
+</script>
 <template>
   <article class="grid-card-hover h-full">
     <UCard
@@ -28,12 +36,3 @@
     </UCard>
   </article>
 </template>
-
-<script setup lang="ts">
-defineProps<{
-  title: string;
-  category: string;
-  description: string;
-  image: string;
-}>();
-</script>

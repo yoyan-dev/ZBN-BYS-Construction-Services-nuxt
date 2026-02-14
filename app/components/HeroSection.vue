@@ -1,3 +1,9 @@
+<script setup lang="ts">
+defineProps<{
+  title: string;
+  description: string;
+}>();
+</script>
 <template>
   <section class="relative isolate overflow-hidden">
     <NuxtImg
@@ -9,7 +15,7 @@
       loading="eager"
     />
     <div
-      class="absolute inset-0 bg-gradient-to-r from-zinc-950/90 via-zinc-900/75 to-zinc-900/50"
+      class="absolute inset-0 `bg-linear-to-r from-zinc-950/90 via-zinc-900/75 to-zinc-900/50"
     />
 
     <UContainer class="relative max-w-7xl mx-auto py-28 lg:py-36">
@@ -45,10 +51,3 @@
     </UContainer>
   </section>
 </template>
-
-<script setup lang="ts">
-defineProps<{
-  title: string;
-  description: string;
-}>();
-</script>

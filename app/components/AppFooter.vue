@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useI18n } from "#imports";
+
+const { t } = useI18n();
+const year = new Date().getFullYear();
+</script>
 <template>
   <footer class="border-t border-zinc-800 bg-zinc-950 text-zinc-100">
     <UContainer class="max-w-7xl mx-auto py-16">
@@ -49,7 +55,7 @@
           </h4>
           <ul class="space-y-2 text-sm text-zinc-300">
             <li>+639-489-1200</li>
-            <li>hello@zbnbrys.com</li>
+            <li>zbnbrysconstruction@gmail.com</li>
             <li>Lapu Lapu City, Cebu Philippines</li>
           </ul>
         </div>
@@ -77,10 +83,3 @@
     </UContainer>
   </footer>
 </template>
-
-<script setup lang="ts">
-import { useI18n } from "#imports";
-
-const { t } = useI18n();
-const year = new Date().getFullYear();
-</script>

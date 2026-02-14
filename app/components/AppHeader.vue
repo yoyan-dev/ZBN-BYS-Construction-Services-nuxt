@@ -1,3 +1,30 @@
+<script setup lang="ts">
+import { useI18n } from "#imports";
+
+const { t, locale, locales, setLocale } = useI18n();
+const route = useRoute();
+
+const isMobileMenuOpen = ref(false);
+
+const navItems = [
+  { key: "home", to: "/" },
+  { key: "about", to: "/about" },
+  { key: "services", to: "/services" },
+  { key: "projects", to: "/projects" },
+  { key: "contact", to: "/contact" },
+] as const;
+
+const localeCodes = computed(() => locales.value.map((item) => item.code));
+
+const isActive = (path: string) => {
+  if (path === "/") {
+    return route.path === "/";
+  }
+
+  return route.path.startsWith(path);
+};
+</script>
+
 <template>
   <header
     class="sticky top-0 z-50 border-b border-zinc-200/70 bg-white/95 backdrop-blur"
@@ -65,50 +92,14 @@
             :to="item.to"
             class="rounded-lg px-4 py-2 text-sm font-semibold text-zinc-700 hover:bg-zinc-100"
             @click="isMobileMenuOpen = false"
+            :class="
+              isActive(item.to) ? ' text-primary hover:text-primary-400' : ''
+            "
           >
             {{ item.key }}
           </NuxtLink>
-          <div class="mt-2 flex gap-2">
-            <UButton
-              v-for="code in localeCodes"
-              :key="code"
-              size="sm"
-              :variant="locale === code ? 'solid' : 'outline'"
-              :color="locale === code ? 'primary' : 'neutral'"
-              @click="setLocale(code)"
-            >
-              {{ code.toUpperCase() }}
-            </UButton>
-          </div>
         </div>
       </UContainer>
     </div>
   </header>
 </template>
-
-<script setup lang="ts">
-import { useI18n } from "#imports";
-
-const { t, locale, locales, setLocale } = useI18n();
-const route = useRoute();
-
-const isMobileMenuOpen = ref(false);
-
-const navItems = [
-  { key: "home", to: "/" },
-  { key: "about", to: "/about" },
-  { key: "services", to: "/services" },
-  { key: "projects", to: "/projects" },
-  { key: "contact", to: "/contact" },
-] as const;
-
-const localeCodes = computed(() => locales.value.map((item) => item.code));
-
-const isActive = (path: string) => {
-  if (path === "/") {
-    return route.path === "/";
-  }
-
-  return route.path.startsWith(path);
-};
-</script>
