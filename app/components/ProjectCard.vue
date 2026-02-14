@@ -22,15 +22,14 @@ defineProps<{
       <div class="mt-5 space-y-3">
         <div class="flex items-center justify-between gap-3">
           <h3 class="font-heading text-xl font-bold text-zinc-950">
-            Projects That Define Reliability
+            {{ title }}
           </h3>
           <UBadge color="primary" variant="soft">
             {{ category }}
           </UBadge>
         </div>
         <p class="text-sm leading-relaxed text-zinc-600">
-          Selected projects showcasing quality, control, and consistent
-          execution across sectors.
+          {{ description }}
         </p>
       </div>
     </UCard>

@@ -27,49 +27,49 @@ interface ReasonItem {
 const services: ServicePreview[] = [
   {
     icon: "i-lucide-building-2",
-    title: "Commercial Construction",
+    title: "Construction Services",
     description:
-      "Office and mixed-use developments built for durability and operational efficiency.",
-    badge: "Turnkey",
+      "Comprehensive construction solutions including civil, architectural, mechanical, electrical, and plumbing works.",
+    badge: "Core Service",
   },
   {
-    icon: "i-lucide-factory",
-    title: "Industrial Facilities",
+    icon: "i-lucide-package",
+    title: "Material Supply",
     description:
-      "High-performance plants, warehouses, and logistics hubs optimized for throughput.",
-    badge: "Industrial",
+      "Reliable supply of quality construction materials and system components for projects of any scale.",
+    badge: "Supply",
   },
   {
-    icon: "i-lucide-shield-check",
-    title: "Structural Rehabilitation",
+    icon: "i-lucide-truck",
+    title: "Equipment Rental",
     description:
-      "Specialized retrofit and reinforcement programs extending lifecycle and resilience.",
-    badge: "Safety-First",
+      "Well-maintained construction equipment available for short- and long-term project requirements.",
+    badge: "Rental",
   },
 ];
 
 const projects: ProjectPreview[] = [
   {
-    title: "Northpoint Logistics Hub",
-    category: "Industrial",
+    title: "Mid-Rise Commercial Building Project",
+    category: "Commercial",
     description:
-      "420,000 sq ft logistics platform delivered in 16 months with zero lost-time incidents.",
+      "Complete civil, architectural, HVAC, electrical, plumbing, and fire protection system installation for a commercial facility.",
     image:
       "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1200&q=80",
   },
   {
-    title: "Rivergate Business Center",
-    category: "Commercial",
+    title: "Industrial Warehouse Development",
+    category: "Industrial",
     description:
-      "High-rise office campus with integrated smart-building controls and LEED-ready systems.",
+      "Design and build of an industrial warehouse including power distribution, ventilation systems, and sanitary works.",
     image:
       "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
   },
   {
-    title: "Eastline Bridge Reinforcement",
+    title: "Institutional Facility System Upgrade",
     category: "Infrastructure",
     description:
-      "Critical transport corridor upgrade completed under active traffic management.",
+      "Retrofitting and system upgrade featuring fire detection, electrical improvements, and HVAC system enhancement.",
     image:
       "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
   },
@@ -77,32 +77,32 @@ const projects: ProjectPreview[] = [
 
 const reasons: ReasonItem[] = [
   {
-    icon: "i-lucide-hard-hat",
-    value: "18+ Years",
-    title: "Proven Experience",
+    icon: "i-lucide-drafting-compass",
+    value: "End-to-End",
+    title: "Design & Build Expertise",
     description:
-      "Regional and national project expertise across multiple construction disciplines.",
+      "Integrated engineering and construction solutions from concept planning to project turnover.",
   },
   {
-    icon: "i-lucide-shield",
-    value: "100%",
-    title: "Safety Culture",
+    icon: "i-lucide-shield-check",
+    value: "Code-Compliant",
+    title: "Regulatory Assurance",
     description:
-      "Comprehensive compliance protocols and workforce training embedded at every level.",
+      "Complete documentation support and strict adherence to industry standards and authority requirements.",
   },
   {
-    icon: "i-lucide-clock-3",
-    value: "On Schedule",
-    title: "Delivery Discipline",
+    icon: "i-lucide-cpu",
+    value: "Modern Systems",
+    title: "Advanced Engineering",
     description:
-      "Lean planning and transparent reporting to keep milestones predictable.",
+      "Implementation of HVAC, electrical, fire protection, and plumbing systems using updated technologies.",
   },
   {
     icon: "i-lucide-handshake",
-    value: "Client First",
-    title: "Partnership Model",
+    value: "Client-Focused",
+    title: "Collaborative Approach",
     description:
-      "Collaborative engagement model with clear communication from bid to handover.",
+      "Close coordination with clients to balance functionality, efficiency, and cost-effectiveness.",
   },
 ];
 </script>
