@@ -1,20 +1,17 @@
 <script setup lang="ts">
-import { useI18n } from "#imports";
-
-const { t, locale, locales, setLocale } = useI18n();
 const route = useRoute();
 
 const isMobileMenuOpen = ref(false);
 
 const navItems = [
-  { key: "home", to: "/" },
-  { key: "about", to: "/about" },
-  { key: "services", to: "/services" },
-  { key: "projects", to: "/projects" },
-  { key: "contact", to: "/contact" },
+  { label: "Home", to: "/" },
+  { label: "About", to: "/about" },
+  { label: "Services", to: "/services" },
+  { label: "Projects", to: "/projects" },
+  { label: "Rental Equipment", to: "/rental-equipment" },
+  { label: "Materials", to: "/materials" },
+  { label: "Contact", to: "/contact" },
 ] as const;
-
-const localeCodes = computed(() => locales.value.map((item) => item.code));
 
 const isActive = (path: string) => {
   if (path === "/") {
@@ -52,7 +49,7 @@ const isActive = (path: string) => {
         <nav class="hidden items-center gap-2 md:flex">
           <NuxtLink
             v-for="item in navItems"
-            :key="item.key"
+            :key="item.to"
             :to="item.to"
             class="rounded-lg px-4 py-2 text-sm font-semibold transition hover:bg-zinc-100 hover:text-zinc-950"
             :class="
@@ -61,7 +58,7 @@ const isActive = (path: string) => {
                 : ''
             "
           >
-            {{ item.key }}
+            {{ item.label }}
           </NuxtLink>
         </nav>
 
@@ -88,7 +85,7 @@ const isActive = (path: string) => {
         <div class="flex flex-col gap-2">
           <NuxtLink
             v-for="item in navItems"
-            :key="item.key"
+            :key="item.to"
             :to="item.to"
             class="rounded-lg px-4 py-2 text-sm font-semibold text-zinc-700 hover:bg-zinc-100"
             @click="isMobileMenuOpen = false"
@@ -96,7 +93,7 @@ const isActive = (path: string) => {
               isActive(item.to) ? ' text-primary hover:text-primary-400' : ''
             "
           >
-            {{ item.key }}
+            {{ item.label }}
           </NuxtLink>
         </div>
       </UContainer>

@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { useI18n } from "#imports";
-
-const { t } = useI18n();
 const year = new Date().getFullYear();
 </script>
 <template>
@@ -24,26 +21,36 @@ const year = new Date().getFullYear();
           </h4>
           <ul class="space-y-2 text-sm text-zinc-300">
             <li>
-              <NuxtLink to="/" class="hover:text-amber-400">home</NuxtLink>
+              <NuxtLink to="/" class="hover:text-amber-400">Home</NuxtLink>
             </li>
             <li>
               <NuxtLink to="/about" class="hover:text-amber-400"
-                >about</NuxtLink
+                >About</NuxtLink
               >
             </li>
             <li>
               <NuxtLink to="/services" class="hover:text-amber-400"
-                >services</NuxtLink
+                >Services</NuxtLink
               >
             </li>
             <li>
               <NuxtLink to="/projects" class="hover:text-amber-400"
-                >projects</NuxtLink
+                >Projects</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink to="/rental-equipment" class="hover:text-amber-400"
+                >Rental Equipment</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink to="/materials" class="hover:text-amber-400"
+                >Materials</NuxtLink
               >
             </li>
             <li>
               <NuxtLink to="/contact" class="hover:text-amber-400"
-                >contact</NuxtLink
+                >Contact</NuxtLink
               >
             </li>
           </ul>

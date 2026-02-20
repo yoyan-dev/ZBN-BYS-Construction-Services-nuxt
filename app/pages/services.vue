@@ -9,59 +9,75 @@ interface ServiceItem {
 const services: ServiceItem[] = [
   {
     icon: "i-lucide-drafting-compass",
-    title: "Design and Build",
+    title: "Shop Drawing With/Without Sign and Seal",
     description:
-      "Complete project delivery from concept design, planning, and engineering through full construction and turnover.",
-    badge: "Core",
-  },
-  {
-    icon: "i-lucide-bell-ring",
-    title: "Fire Detection Alarm System",
-    description:
-      "Supply and installation of reliable fire detection and alarm systems compliant with safety standards.",
-    badge: "Fire Safety",
-  },
-  {
-    icon: "i-lucide-wind",
-    title: "HVAC System",
-    description:
-      "Ventilation, ducting, chilled water, AC, and VRF systems for commercial and industrial facilities.",
-    badge: "Mechanical",
-  },
-  {
-    icon: "i-lucide-zap",
-    title: "Electrical Works",
-    description:
-      "Commercial and industrial power systems including panel boards, wiring, and distribution systems.",
-    badge: "Electrical",
-  },
-  {
-    icon: "i-lucide-droplets",
-    title: "Plumbing & Sanitary System",
-    description:
-      "Complete water supply, drainage, and sanitary system installation for various building types.",
-    badge: "Plumbing",
-  },
-  {
-    icon: "i-lucide-building-2",
-    title: "Civil & Architectural Works",
-    description:
-      "Commercial and industrial buildings, interior fit-outs, and retrofitting solutions.",
-    badge: "Construction",
-  },
-  {
-    icon: "i-lucide-shield",
-    title: "Fire Protection System",
-    description:
-      "Design and installation of fire sprinkler and suppression systems for enhanced building safety.",
-    badge: "Protection",
+      "Detailed drafting and technical plans with optional sign and seal support.",
+    badge: "Engineering",
   },
   {
     icon: "i-lucide-calculator",
-    title: "Project Estimation & Shop Drawings",
+    title: "Project / Plan Estimation",
     description:
-      "Accurate cost estimation and detailed shop drawings with or without sign and seal.",
-    badge: "Engineering",
+      "Cost estimation and planning support for project budgeting and scope control.",
+    badge: "Pre-Construction",
+  },
+  {
+    icon: "i-lucide-building-2",
+    title: "Architectural Works",
+    description:
+      "Architectural scope execution from layout to finishing applications.",
+    badge: "Construction",
+  },
+  {
+    icon: "i-lucide-hard-hat",
+    title: "Structural Works",
+    description:
+      "Structural construction services for reinforced and steel-based building systems.",
+    badge: "Construction",
+  },
+  {
+    icon: "i-lucide-zap",
+    title: "Electrical Works (Commercial and Industrial Power System)",
+    description:
+      "Commercial and industrial electrical installations including distribution and controls.",
+    badge: "Electrical",
+  },
+  {
+    icon: "i-lucide-cpu",
+    title: "Electronics",
+    description:
+      "Electronics systems integration for building operations and technical infrastructure.",
+    badge: "ELV",
+  },
+  {
+    icon: "i-lucide-droplets",
+    title: "Plumbing System",
+    description:
+      "Water supply and piping network installation for residential, commercial, and industrial projects.",
+    badge: "Plumbing",
+  },
+  {
+    icon: "i-lucide-waves",
+    title: "Sanitary System",
+    description:
+      "Sanitary layout and drainage system implementation with compliant installation methods.",
+    badge: "Sanitary",
+  },
+  {
+    icon: "i-lucide-wind",
+    title:
+      "HVAC SYSTEM (Ventilation System, Ducting System, Chilled Water System, AC System, VRF System)",
+    description:
+      "Complete HVAC works covering ventilation, ducting, chilled water, AC, and VRF systems.",
+    badge: "Mechanical",
+  },
+  {
+    icon: "i-lucide-shield-alert",
+    title:
+      "Fire Alarm System, Burglar System, CCTV Installation, Sanitary System, and Door Access",
+    description:
+      "Integrated life-safety and security systems including fire alarm, burglar, CCTV, sanitary interfaces, and door access.",
+    badge: "Security",
   },
 ];
 </script>

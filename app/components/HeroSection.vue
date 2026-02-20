@@ -7,7 +7,7 @@ defineProps<{
 <template>
   <section class="relative isolate overflow-hidden">
     <NuxtImg
-      src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=80"
+      src="/images/IMG_2518.jpeg"
       alt="Corporate construction skyline"
       class="absolute inset-0 h-full w-full object-cover"
       width="1800"
@@ -19,7 +19,7 @@ defineProps<{
     />
 
     <UContainer class="relative max-w-7xl mx-auto py-28 lg:py-36">
-      <div class="max-w-3xl space-y-7 text-white">
+      <div class="max-w-3xl space-y-7 text-white bg-black/40 p-4">
         <UBadge
           color="primary"
           variant="solid"
@@ -31,12 +31,11 @@ defineProps<{
         <h1
           class="font-heading text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl"
         >
-          Build Houses and Settle Down
+          {{ title }}
         </h1>
 
         <p class="max-w-2xl text-base leading-relaxed text-zinc-200 sm:text-lg">
-          Design and build Structural, Architectural, Mechanical, and
-          Electronics Works
+          {{ description }}
         </p>
 
         <div class="flex flex-wrap gap-3">

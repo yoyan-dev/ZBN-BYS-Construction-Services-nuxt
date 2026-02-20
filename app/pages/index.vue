@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import { useI18n } from "#imports";
-
-const { t } = useI18n();
-
 interface ServicePreview {
   icon: string;
   title: string;
@@ -54,24 +50,21 @@ const projects: ProjectPreview[] = [
     category: "Commercial",
     description:
       "Complete civil, architectural, HVAC, electrical, plumbing, and fire protection system installation for a commercial facility.",
-    image:
-      "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/IMG_2520.jpeg",
   },
   {
     title: "Industrial Warehouse Development",
     category: "Industrial",
     description:
       "Design and build of an industrial warehouse including power distribution, ventilation systems, and sanitary works.",
-    image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/IMG_2517.jpeg",
   },
   {
     title: "Institutional Facility System Upgrade",
     category: "Infrastructure",
     description:
       "Retrofitting and system upgrade featuring fire detection, electrical improvements, and HVAC system enhancement.",
-    image:
-      "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/IMG_2516.jpeg",
   },
 ];
 
@@ -110,8 +103,8 @@ const reasons: ReasonItem[] = [
 <template>
   <div>
     <HeroSection
-      :title="t('home.hero.title')"
-      :description="t('home.hero.description')"
+      title="Build Houses and Settle Down"
+      description="Design and Build Architectural, Structural, Mechanical, Electrical, and Electronics works"
     />
 
     <section class="section-wrap">

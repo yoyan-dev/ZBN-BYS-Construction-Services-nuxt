@@ -75,14 +75,13 @@ const timeline: TimelineItem[] = [
             Using modern technologies and innovative approaches, we present
             practical design alternatives that balance functionality,
             efficiency, and budget. We also supply and support HVAC, Fire
-            Protection, Plumbing, Structural, and Architectural
-            systems—providing complete technical solutions for projects of any
-            scale.
+            Protection, Plumbing, Structural, and Architectural systems,
+            providing complete technical solutions for projects of any scale.
           </p>
         </div>
 
         <NuxtImg
-          src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80"
+          src="/images/IMG_2515.jpeg"
           alt="Construction team on project site"
           class="h-full min-h-80 w-full rounded-2xl object-cover shadow-xl"
           width="1400"
@@ -96,7 +95,7 @@ const timeline: TimelineItem[] = [
         <UCard class="rounded-xl border border-zinc-200 shadow-xl">
           <h3 class="font-heading text-2xl font-bold text-zinc-950">Mission</h3>
           <p class="mt-3 text-zinc-600">
-            Like God’s people who build houses, plant vineyards, and enjoy the
+            Like God's people who build houses, plant vineyards, and enjoy the
             fruits of their labor, ZBN BRYS aims to deliver projects and
             solutions that bring lasting value and prosperity. We work with
             integrity and purpose so that every effort bears fruit and blesses
@@ -110,7 +109,7 @@ const timeline: TimelineItem[] = [
             Inspired by the call to build, grow, and prosper, ZBN BRYS envisions
             a future where every project we undertake brings lasting value,
             growth, and blessings to our clients, communities, and stakeholders.
-            Just as God’s people are called to seek peace and prosperity, we
+            Just as God's people are called to seek peace and prosperity, we
             strive to create spaces and solutions that foster progress,
             opportunity, and well-being for all.
           </p>
