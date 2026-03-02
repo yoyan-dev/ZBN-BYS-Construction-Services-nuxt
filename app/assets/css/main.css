@@ -1,25 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap");
 @import "tailwindcss";
 @import "@nuxt/ui";
 
 @theme static {
-  --font-sans: 'Inter', sans-serif;
+  --font-sans: "Manrope", sans-serif;
 
-  --color-amber-50: #fffbeb;
-  --color-amber-100: #fef3c7;
-  --color-amber-200: #fde68a;
-  --color-amber-300: #fcd34d;
-  --color-amber-400: #fbbf24;
-  --color-amber-500: #f59e0b;
-  --color-amber-600: #d97706;
-  --color-amber-700: #b45309;
-  --color-amber-800: #92400e;
-  --color-amber-900: #78350f;
-  --color-amber-950: #451a03;
+  --color-brand-50: #f1f6ff;
+  --color-brand-100: #dfeafe;
+  --color-brand-200: #bfd5fe;
+  --color-brand-300: #93b9fc;
+  --color-brand-400: #5f93f8;
+  --color-brand-500: #3b73f2;
+  --color-brand-600: #1f56dd;
+  --color-brand-700: #1945be;
+  --color-brand-800: #183a9b;
+  --color-brand-900: #17347a;
+  --color-brand-950: #0a1838;
+
+  --color-steel-50: #f8fafc;
+  --color-steel-100: #f1f5f9;
+  --color-steel-200: #e2e8f0;
+  --color-steel-300: #cbd5e1;
+  --color-steel-400: #94a3b8;
+  --color-steel-500: #64748b;
+  --color-steel-600: #475569;
+  --color-steel-700: #334155;
+  --color-steel-800: #1e293b;
+  --color-steel-900: #0f172a;
+  --color-steel-950: #020617;
 }
 
 :root {
-  --font-heading: 'Poppins', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-heading: "Sora", sans-serif;
+  --font-body: "Manrope", sans-serif;
 }
 
 html,
@@ -30,11 +43,11 @@ body,
 
 body {
   font-family: var(--font-body);
-  color: #18181b;
+  color: #0f172a;
   background:
-    radial-gradient(circle at 10% 0%, rgba(245, 158, 11, 0.12), transparent 35%),
-    radial-gradient(circle at 90% 25%, rgba(39, 39, 42, 0.1), transparent 45%),
-    #ffffff;
+    radial-gradient(circle at 12% -6%, rgba(59, 115, 242, 0.2), transparent 32%),
+    radial-gradient(circle at 88% 4%, rgba(10, 24, 56, 0.12), transparent 36%),
+    linear-gradient(180deg, #f8fafc 0%, #ffffff 40%);
 }
 
 .font-heading {
@@ -42,9 +55,13 @@ body {
 }
 
 .section-wrap {
-  @apply py-20;
+  @apply py-16 md:py-20;
+}
+
+.section-shell {
+  @apply mx-auto max-w-7xl;
 }
 
 .grid-card-hover {
-  @apply transition-transform duration-300 ease-out hover:-translate-y-1 hover:scale-[1.01];
+  @apply transition-transform duration-300 ease-out hover:-translate-y-1.5 hover:shadow-xl;
 }

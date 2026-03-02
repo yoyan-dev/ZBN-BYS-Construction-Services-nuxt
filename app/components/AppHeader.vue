@@ -24,22 +24,26 @@ const isActive = (path: string) => {
 
 <template>
   <header
-    class="sticky top-0 z-50 border-b border-zinc-200/70 bg-white/95 backdrop-blur"
+    class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl"
   >
-    <UContainer class="max-w-7xl mx-auto">
+    <div class="h-1 bg-gradient-to-r from-brand-900 via-brand-700 to-brand-500" />
+
+    <UContainer class="section-shell">
       <div class="flex h-20 items-center justify-between gap-6">
         <NuxtLink to="/" class="flex items-center gap-3">
-          <div class="grid h-11 w-11 place-items-center">
-            <NuxtImg src="/logo.png" alt="image" width="400" height="400" />
+          <div
+            class="grid h-11 w-11 place-items-center rounded-xl border border-brand-100 bg-brand-50"
+          >
+            <NuxtImg src="/logo.png" alt="ZBN BRYS logo" width="400" height="400" />
           </div>
           <div>
             <p
-              class="font-heading text-base font-bold tracking-tight text-zinc-950"
+              class="font-heading text-base font-bold tracking-tight text-slate-950"
             >
               ZBN BRYS
             </p>
             <p
-              class="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500"
+              class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500"
             >
               Construction Services
             </p>
@@ -51,10 +55,10 @@ const isActive = (path: string) => {
             v-for="item in navItems"
             :key="item.to"
             :to="item.to"
-            class="rounded-lg px-4 py-2 text-sm font-semibold transition hover:bg-zinc-100 hover:text-zinc-950"
+            class="rounded-lg px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-brand-50 hover:text-brand-800"
             :class="
               isActive(item.to)
-                ? 'bg-zinc-900 text-white hover:bg-zinc-900 hover:text-white'
+                ? 'bg-brand-900 text-white hover:bg-brand-900 hover:text-white'
                 : ''
             "
           >
@@ -63,7 +67,9 @@ const isActive = (path: string) => {
         </nav>
 
         <div class="hidden items-center gap-2 md:flex">
-          <UButton size="sm" color="primary" to="/contact"> Get Quote </UButton>
+          <UButton size="sm" color="primary" to="/contact">
+            Request Quote
+          </UButton>
         </div>
 
         <UButton
@@ -79,18 +85,18 @@ const isActive = (path: string) => {
 
     <div
       v-if="isMobileMenuOpen"
-      class="border-t border-zinc-200 bg-white md:hidden"
+      class="border-t border-slate-200 bg-white md:hidden"
     >
-      <UContainer class="max-w-7xl mx-auto py-4">
+      <UContainer class="section-shell py-4">
         <div class="flex flex-col gap-2">
           <NuxtLink
             v-for="item in navItems"
             :key="item.to"
             :to="item.to"
-            class="rounded-lg px-4 py-2 text-sm font-semibold text-zinc-700 hover:bg-zinc-100"
+            class="rounded-lg px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-brand-50"
             @click="isMobileMenuOpen = false"
             :class="
-              isActive(item.to) ? ' text-primary hover:text-primary-400' : ''
+              isActive(item.to) ? 'bg-brand-900 text-white hover:bg-brand-900' : ''
             "
           >
             {{ item.label }}

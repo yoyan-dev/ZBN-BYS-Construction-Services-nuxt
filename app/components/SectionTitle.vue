@@ -17,23 +17,23 @@ const alignmentClass = computed(() =>
 );
 </script>
 <template>
-  <div :class="['space-y-4', alignmentClass]">
+  <div :class="['space-y-5', alignmentClass]">
     <UBadge
       v-if="eyebrow"
       color="primary"
       variant="soft"
-      class="rounded-full px-3 py-1 uppercase tracking-[0.16em]"
+      class="rounded-full px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.22em]"
     >
       {{ eyebrow }}
     </UBadge>
     <h2
-      class="font-heading text-3xl font-bold tracking-tight text-zinc-950 sm:text-4xl"
+      class="font-heading text-3xl font-extrabold leading-tight tracking-tight text-slate-950 sm:text-4xl lg:text-5xl"
     >
       {{ title }}
     </h2>
     <p
       v-if="description"
-      class="max-w-3xl text-zinc-600"
+      class="max-w-3xl text-base leading-relaxed text-slate-600 md:text-lg"
       :class="isCenter ? 'mx-auto' : ''"
     >
       {{ description }}
